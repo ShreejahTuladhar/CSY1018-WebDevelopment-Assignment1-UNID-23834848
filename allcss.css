@@ -1,45 +1,118 @@
+/*all*/
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-
-body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
+/*top navigation menu bar*/
 nav{
     background: #004e8a;
     height: 80px;
     width: 100%;
 }
 
+/*Top left Shreejah Tuladhar*/
 label.logo{
+    float: left;
     color: white;
     font-size: 40px ;
     line-height: 75px;
-    padding: 0 75px;
+    padding: 0 2rem;
 }
 
+/* to send nav items to the right side*/
 nav ul{
     float: right;
     margin-right: 20px;
 }
 
+/*spacing*/
 nav ul li{
     display: inline-block;
     line-height: 75px;
     margin: 0 5px;
 }
-
+/*nav list items display*/
 nav ul li a{
     color: white;
     font-size: 15px;   
+    padding: 7px 13px;
+    border-radius: 10%;
 }
 
+/*active page display and hover effect*/
 a.active,a:hover{
     background: white;
     color: #004e8a;
+    transition: 0.5s;
+}
+
+input{
+    display: none;
+}
+
+
+@media (max-width:1012px){
+    label.logo{
+        font-size: 30px;
+        padding: 0 2rem;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+
+nav .navbar{
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+span.bar{
+    width: 35px;
+    height: 2px;
+    margin-bottom: 8px;
+    background: white;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+@media (max-width: 951px){
+    .navbar{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #154ace;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+section{
+    background: url() no-repeat;
+    background-size: cover;
+    height: calc(100vh-80px);
 }
