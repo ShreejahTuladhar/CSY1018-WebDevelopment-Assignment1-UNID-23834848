@@ -1,0 +1,34 @@
+.resume-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.resume-header h1 {
+  margin: 0;
+}
+
+.resume-section {
+  padding: 20px;
+}
+
+.resume-section h2 {
+  margin-top: 0;
+}
+
+.resume-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-section ul li {
+  margin-bottom: 10px;
+}
+
+.resume-section ul li span {
+  font-weight: bold;
+  display: inline-block;
+  width: 120p
+}
