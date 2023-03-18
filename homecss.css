@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(235, 199, 153);
+    background: linear-gradient(to right, rgb(90, 58, 0),rgb(186, 121, 0),orange,rgb(254, 176, 32),rgb(247, 208, 136));
     
 }
 .logo{
@@ -161,6 +161,6 @@ img.me{
 .click{
     margin: 0;
     padding: 0;
-    color: rgb(219, 36, 94);
+    color: rgb(252, 140, 175);
     justify-content: center;
 }
